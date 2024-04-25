@@ -5,8 +5,12 @@ export default function countries() {
 const [countries, setCountries] = useState([]);
 
 const apiCall = async() => {
-    const response = await axios.get("https://restcountries.com/v3.1/all");
-    setCountries(response.data);
+    try {
+        const response = await axios.get("https://restcountries.com/v3.1/all");
+        setCountries(response.data);
+    } catch (error) {
+        console.error("Error fetching countries:", error);
+    }
 }
 
 useEffect(() => {
