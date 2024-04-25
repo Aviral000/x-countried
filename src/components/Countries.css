@@ -1,0 +1,32 @@
+.card {
+    /* display: flex;
+    flex-wrap: wrap;
+    gap: 3rem; */
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 200px);
+    gap: 10px; */
+  }
+
+  .middle-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+  
+  .card-size {
+    width: 10vw;
+    height: auto;
+    border: 1px solid black;
+    flex: 0 0 auto;
+  }
+  
+  .inner-card {
+    padding: 1rem;
+  }
+  
+  .inner-card img {
+    width: auto;
+    height: auto;
+    object-fit: cover;
+  }
